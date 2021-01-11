@@ -1,0 +1,138 @@
+:root{
+    --sombra: 0px 0px 8px rgb(0, 0, 0);
+    --radio: 10px;
+}
+
+div.hidden{
+    margin: 0;
+}
+div.overflow{
+    overflow-y: auto;
+}
+div.forma{
+    padding: 5px;
+    box-shadow: var(--sombra);
+    border-radius: var(--radio);
+}
+.nivel1{
+    background-color: rgba(255, 251, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 250px 250px 250px 250px;
+    grid-row-gap: 1vh;
+    grid-template-areas:
+        'h1' 
+        'estudos'
+        'jogos'
+        'marcadores'
+        'projetos-publicos';
+}
+#h1{
+    grid-area: h1;
+}
+#estudos{
+    grid-area: estudos;
+}
+#jogos{
+    grid-area: jogos;
+}
+#macador{
+    grid-area: marcadores;
+}
+#projeto-publico{
+    grid-area: projetos-publicos;
+}
+
+.nivel2{
+    background-color: rgba(255, 0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 180px ;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        'h2 h2 h2 h2'
+        'c1 c2 c3 c4';
+}
+#h2estudos{
+    grid-area: h2;
+}
+#grid-flex{
+    grid-area: c1;
+}
+#javascript{
+    grid-area: c2;
+}
+#html5-css5{
+    grid-area: c3;
+}
+
+#h2jogos{
+    grid-area: h2;
+}
+#jogo-da-velha{
+    grid-area: c1;
+}
+#jogo-da-forca{
+    grid-area: c2;
+}
+
+#h2marcadores{
+    grid-area: h2;
+}
+#canastra{
+    grid-area: c1;
+}
+
+#h2projetos-publicos{
+    grid-area: h2;
+}
+
+.nivel3{
+    background-color: rgba(81, 255, 0, 0);
+}
+.nivel4{
+    background-color: rgba(255, 0, 191, 0);
+}
+.nivel5{
+    background-color: rgba(0, 255, 242, 0);
+}
+h1{
+    margin: 10px 10px;
+}
+h2{
+    margin: 10px 20px;
+}
+h3{
+    margin: 10px 30px;
+}
+h4{
+    margin: 10px 40px;
+}
+p{
+    margin: 10px 50px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0px 10px 10px 0px ;
+    z-index: 1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0px 10px 10px 0px ;
+    z-index: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
